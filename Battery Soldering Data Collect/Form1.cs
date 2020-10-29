@@ -19,19 +19,39 @@ namespace Battery_Soldering_Data_Collect
     public partial class Form1 : Form
     {
         //System.Collections.ArrayList alst;
+        string selected_date;
+        string path, path_n, path_p;
+        string assigned_path;
+        ArrayList file_list = new ArrayList();
+        ArrayList file_list_neg = new ArrayList();
+        ArrayList file_list_pos = new ArrayList();
         public Form1()
         {
             InitializeComponent();
-            string path = this.textBox1.Text;
-            string selected_date;
-            ArrayList file_list = new ArrayList();
+            data_dispaly_grid();
+            
+
+        }
+
+        private void data_dispaly_grid()
+        {
+            selected_date = Select_Date.Value.ToString("MM - dd - yyyy");    //得到当天的时间
+            assigned_path = this.textBox1.Text;
             try
             {
-                path = path + "synergy v5\\dati\\";
+                path = assigned_path + "synergy v5\\dati\\";
+                path_n = assigned_path + "Rework_negative\\dati\\";
+                path_p = assigned_path + "Rework_positive\\dati\\";
                 file_list = GetFiles(path);
-                string[] sn_time;
+                file_list_neg = GetFiles(path_n);
+                file_list_pos = GetFiles(path_p);
+                //string[] sn_time;
                 string[,] sn_time_result = new string[file_list.Count, 2];
+                string[,] sn_time_result_neg = new string[file_list_neg.Count, 2];
+                string[,] sn_time_result_pos = new string[file_list_neg.Count, 2];
                 sn_time_result = get_sn_time(file_list);
+                sn_time_result_neg = get_sn_time(file_list_neg);
+                sn_time_result_pos = get_sn_time(file_list_pos);
                 show_dataGrid(sn_time_result);
             }
             catch
@@ -39,6 +59,7 @@ namespace Battery_Soldering_Data_Collect
                 return;
             }
         }
+
 
         private void CheckBox1_Clicked(object sender, EventArgs e)
         {
@@ -72,7 +93,7 @@ namespace Battery_Soldering_Data_Collect
                     //dt.Rows.Clear();                                              //清除dt
                     //dataGridView1.DataSource = dt;                                //重新绑定清除后的dt到datagrid
                     string despath = this.textBox1.Text.ToString() + "\\result\\";
-                    MoveFiles(this.textBox1.Text + "synergy v5\\dati\\", despath);  //move 文件到\result目录下
+                    //MoveFiles(this.textBox1.Text + "synergy v5\\dati\\", despath);  //move 文件到\result目录下
                     //MoveFiles(this.textBox1.Text, despath);
 
                 }
@@ -306,7 +327,7 @@ namespace Battery_Soldering_Data_Collect
 
                     int rowIndex;
                     int colIndex;
-                    int page,page_length=0;
+                    int page;
                     Range range_1, range_2, range_3;
                     //取得标题并保存
                     String Current_date=DateTime.Now.ToString("yyyyMMdd");
@@ -449,13 +470,20 @@ namespace Battery_Soldering_Data_Collect
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            string path;
-            path = SelectPath();
-            this.textBox1.Text = path;
-            ArrayList file_list = new ArrayList();
+            string selected_path;
+            selected_path = SelectPath();
+            this.textBox1.Text = selected_path;
+            string assigned_path = this.textBox1.Text;
+            path = assigned_path + "\\synergy v5\\dati\\";
+            path_n = assigned_path + "\\Rework_negative\\dati\\";
+            path_p = assigned_path + "\\Rework_positive\\dati\\";
             file_list = GetFiles(path);
-            string[] sn_time;
+            file_list_neg = GetFiles(path_n);
+            file_list_pos = GetFiles(path_p);
+            //string[] sn_time;
             string[,] sn_time_result = new string[file_list.Count, 2];
+            string[,] sn_time_result_neg = new string[file_list_neg.Count, 2];
+            string[,] sn_time_result_pos = new string[file_list_neg.Count, 2];
             sn_time_result = get_sn_time(file_list);
             show_dataGrid(sn_time_result);
         }
@@ -674,7 +702,7 @@ namespace Battery_Soldering_Data_Collect
 
         private void DateTimePicker_1_ValueChanged(object sender, EventArgs e)
         {
-            string selected_date = dateTimePicker_1.Value.ToString("MM - dd - yyyy");
+            selected_date = Select_Date.Value.ToString("MM - dd - yyyy");
             return;
         }
     }

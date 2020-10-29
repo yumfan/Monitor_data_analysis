@@ -32,11 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Generate_Report = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dateTimePicker_1 = new System.Windows.Forms.DateTimePicker();
+            this.Select_Path = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
+            this.Select_Date = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -90,15 +90,15 @@
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.Click += new System.EventHandler(this.CheckBox2_Clicked);
             // 
-            // button1
+            // Generate_Report
             // 
-            this.button1.Location = new System.Drawing.Point(37, 255);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "生成测试报告";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.Generate_Report.Location = new System.Drawing.Point(37, 255);
+            this.Generate_Report.Name = "Generate_Report";
+            this.Generate_Report.Size = new System.Drawing.Size(168, 23);
+            this.Generate_Report.TabIndex = 4;
+            this.Generate_Report.Text = "生成测试报告";
+            this.Generate_Report.UseVisualStyleBackColor = true;
+            this.Generate_Report.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBox1
             // 
@@ -108,48 +108,49 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(305, 26);
             this.textBox1.TabIndex = 5;
-            this.textBox1.Text = "Y:\\";
+            this.textBox1.Text = "C:\\Users\\fym12\\Documents\\创领心脏起搏器\\Production Testbed\\battery soldering_1\\GETSOLDER" +
+    "_2\\";
             // 
-            // button2
+            // Select_Path
             // 
-            this.button2.Location = new System.Drawing.Point(564, 412);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(126, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "选择log存储路径";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.Select_Path.Location = new System.Drawing.Point(564, 412);
+            this.Select_Path.Name = "Select_Path";
+            this.Select_Path.Size = new System.Drawing.Size(126, 23);
+            this.Select_Path.TabIndex = 6;
+            this.Select_Path.Text = "选择log存储路径";
+            this.Select_Path.UseVisualStyleBackColor = true;
+            this.Select_Path.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // button3
+            // Exit
             // 
-            this.button3.Location = new System.Drawing.Point(37, 318);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 23);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "退出";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.Exit.Location = new System.Drawing.Point(37, 318);
+            this.Exit.Margin = new System.Windows.Forms.Padding(2);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(168, 23);
+            this.Exit.TabIndex = 7;
+            this.Exit.Text = "退出";
+            this.Exit.UseVisualStyleBackColor = true;
+            this.Exit.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // dateTimePicker_1
+            // Select_Date
             // 
-            this.dateTimePicker_1.Location = new System.Drawing.Point(37, 142);
-            this.dateTimePicker_1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker_1.Name = "dateTimePicker_1";
-            this.dateTimePicker_1.Size = new System.Drawing.Size(151, 21);
-            this.dateTimePicker_1.TabIndex = 8;
-            this.dateTimePicker_1.ValueChanged += new System.EventHandler(this.DateTimePicker_1_ValueChanged);
+            this.Select_Date.Location = new System.Drawing.Point(37, 142);
+            this.Select_Date.Margin = new System.Windows.Forms.Padding(2);
+            this.Select_Date.Name = "Select_Date";
+            this.Select_Date.Size = new System.Drawing.Size(151, 21);
+            this.Select_Date.TabIndex = 8;
+            this.Select_Date.ValueChanged += new System.EventHandler(this.DateTimePicker_1_ValueChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dateTimePicker_1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Select_Date);
+            this.Controls.Add(this.Exit);
+            this.Controls.Add(this.Select_Path);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Generate_Report);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
@@ -174,11 +175,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Generate_Report;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker_1;
+        private System.Windows.Forms.Button Select_Path;
+        private System.Windows.Forms.Button Exit;
+        private System.Windows.Forms.DateTimePicker Select_Date;
     }
 }
 
