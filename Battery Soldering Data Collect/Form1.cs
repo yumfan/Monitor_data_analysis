@@ -23,6 +23,7 @@ namespace Battery_Soldering_Data_Collect
         {
             InitializeComponent();
             string path = this.textBox1.Text;
+            string selected_date;
             ArrayList file_list = new ArrayList();
             try
             {
@@ -137,7 +138,7 @@ namespace Battery_Soldering_Data_Collect
                     sw.Close();
                     myStream.Close();
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     //MessageBox.Show(ex.ToString());
                 }
@@ -664,6 +665,17 @@ namespace Battery_Soldering_Data_Collect
                     Console.WriteLine(" ==== " + ex.Message);
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DateTimePicker_1_ValueChanged(object sender, EventArgs e)
+        {
+            string selected_date = dateTimePicker_1.Value.ToString("MM - dd - yyyy");
+            return;
         }
     }
 }
