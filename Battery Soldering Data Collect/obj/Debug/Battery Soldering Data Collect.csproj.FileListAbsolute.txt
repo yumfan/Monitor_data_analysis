@@ -1,0 +1,10 @@
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\obj\Debug\Battery_Soldering_Data_Collect.Properties.Resources.resources
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\obj\Debug\Battery Soldering Data Collect.csproj.GenerateResource.cache
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\obj\Debug\Battery Soldering Data Collect.csproj.CoreCompileInputs.cache
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\bin\Debug\Battery Soldering Data Collect.exe.config
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\bin\Debug\Battery Soldering Data Collect.exe
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\bin\Debug\Battery Soldering Data Collect.pdb
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\obj\Debug\Battery Soldering Data Collect.exe
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\obj\Debug\Battery Soldering Data Collect.pdb
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\obj\Debug\Battery_Soldering_Data_Collect.Form1.resources
+C:\Users\fym12\source\repos\Battery Soldering Data Collect\obj\Debug\Battery Soldering Data Collect.csprojAssemblyReference.cache
