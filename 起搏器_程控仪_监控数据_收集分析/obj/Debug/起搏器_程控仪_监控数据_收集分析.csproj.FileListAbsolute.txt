@@ -1,0 +1,10 @@
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\bin\Debug\起搏器_程控仪_监控数据_收集分析.exe.config
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\bin\Debug\起搏器_程控仪_监控数据_收集分析.exe
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\bin\Debug\起搏器_程控仪_监控数据_收集分析.pdb
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\obj\Debug\起搏器_程控仪_监控数据_收集分析.csprojAssemblyReference.cache
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\obj\Debug\起搏器_程控仪_监控数据_收集分析.Form1.resources
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\obj\Debug\起搏器_程控仪_监控数据_收集分析.Properties.Resources.resources
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\obj\Debug\起搏器_程控仪_监控数据_收集分析.csproj.GenerateResource.cache
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\obj\Debug\起搏器_程控仪_监控数据_收集分析.csproj.CoreCompileInputs.cache
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\obj\Debug\起搏器_程控仪_监控数据_收集分析.exe
+C:\Users\fym12\source\repos\起搏器_程控仪_监控数据_收集分析\obj\Debug\起搏器_程控仪_监控数据_收集分析.pdb
